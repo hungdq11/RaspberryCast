@@ -13,7 +13,8 @@ read -p "Which user do you want to install RaspberryCast as? (Leave blank to set
 
 if ! [ -n "$USER" ]; then
     echo "Setting user to default value 'pi'."
-    USER="pi"
+    #USER="pi"
+    USER="ubuntu"
 fi
 
 if ! getent passwd $USER > /dev/null 2>&1; then
